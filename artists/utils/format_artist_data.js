@@ -104,6 +104,7 @@ function cleanCountryName(country) {
     };
 
     for (const [key, value] of Object.entries(countryMappings)) {
+        // shouldnt neccessarily include the key
         if (cleaned.includes(key)) {
             cleaned = cleaned.replace(key, value);
         }

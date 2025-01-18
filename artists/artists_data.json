@@ -1,0 +1,330 @@
+{
+  "pop": [
+    [
+      {
+        "artist": "Vincent van Gogh",
+        "works": "335",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Q6DyAIDmTYGX8IQhbvwe5wx2HFRg5aez1mUdDz3dxwwpIXGfMbiyHZtEIGnXBf4WlJxPAxCw",
+        "link": "https://artsandculture.google.com/entity/vincent-van-gogh/m07_m2?categoryId=artist"
+      },
+      {
+        "artist": "Claude Monet",
+        "works": "289",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RdDeW3cC3EoX-JWccMgpqhdmFwvx1yZHS3JWFZKjDHeOZ2nJHV_rg5cw9zRh6WmRSDK5i2Aw",
+        "link": "https://artsandculture.google.com/entity/claude-monet/m01xnj?categoryId=artist"
+      },
+      {
+        "artist": "Banksy",
+        "works": "44",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RI4rpCEeV6L0tTbtlwu1BKvOxoaQV--do9TFjKkpaafeHdM3kMft42soD4_2flNcpWujghS2U",
+        "link": "https://artsandculture.google.com/entity/banksy/m023b7b?categoryId=artist"
+      },
+      {
+        "artist": "Rembrandt",
+        "works": "2,120",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_TCVJyPfmAOetYL8FgoKKdcg-eU4yGDBprLaaKkJQ99cVpIqSC2HkWLRqoxee5fA4_ol5TS-w",
+        "link": "https://artsandculture.google.com/entity/rembrandt/m0bskv2?categoryId=artist"
+      },
+      {
+        "artist": "Raphael",
+        "works": "150",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_TKBXMSDCNjqxDCOtf7WUpE5qMhj-VDSB_BfsWwLFVm7MuicL9Soci1uQJHg8X5gdxkLLVKrA",
+        "link": "https://artsandculture.google.com/entity/raphael/m0c43g?categoryId=artist"
+      },
+      {
+        "artist": "Paul Cézanne",
+        "works": "134",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SXCm3kPwGWkylyof5Q4DdD93cOyEBzz1NrTeSa4BL4s8nVc-fCM0avyP-LVpsg4Uguz38PuoE",
+        "link": "https://artsandculture.google.com/entity/paul-cézanne/m063mx?categoryId=artist"
+      },
+      {
+        "artist": "Albrecht Dürer",
+        "works": "2,090",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QJh4oQ4JKZZ4nsl2aWwuILPhYP0fElW6dkzSoUzvTwjfZL7Zx7L03P5UIl2YvNcTLI-8c_2o0",
+        "link": "https://artsandculture.google.com/entity/albrecht-dürer/m0z6n?categoryId=artist"
+      },
+      {
+        "artist": "Paul Gauguin",
+        "works": "447",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Sxa7HXvB89qltvKHrviu3VoI8xE9DTTTDnxllEc6Lx8YE7NGimazh7WjqmBW1wA6js0ojJPw",
+        "link": "https://artsandculture.google.com/entity/paul-gauguin/m0h82x?categoryId=artist"
+      },
+      {
+        "artist": "Gustav Klimt",
+        "works": "562",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Sx7DVpgKUSstmnYB-GjQkrvSO-N4w-rfOfysNd-03-YUkgtVtp194MuOMmBO_j2QAga_jU",
+        "link": "https://artsandculture.google.com/entity/gustav-klimt/m03869?categoryId=artist"
+      },
+      {
+        "artist": "Francisco Goya",
+        "works": "1,100",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_TfkfaTZBDxrJgdXFNlL99jbFs5lBuBc0TdJSuFE5x3shOGWttqM00mM3DBo8wcvm5cSMseK74",
+        "link": "https://artsandculture.google.com/entity/francisco-goya/m02y23?categoryId=artist"
+      },
+      {
+        "artist": "Pierre-Auguste Renoir",
+        "works": "248",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_TDyUUIoo4k3vglo7ORTQAhf1Mb_dtGrqKU6SLSsDXQtlwos5Cc928ALLBd1LBv1_tKoqvlqQ",
+        "link": "https://artsandculture.google.com/entity/pierre-auguste-renoir/m06466?categoryId=artist"
+      },
+      {
+        "artist": "Peter Paul Rubens",
+        "works": "430",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QFuMjxlLZzDogoxCDZBzTOkfCX1QfFvPrCGo5v-xxf6OrvVFs-S8EMeft0cdHwptG7R1QIavs",
+        "link": "https://artsandculture.google.com/entity/peter-paul-rubens/m0pwnh?categoryId=artist"
+      },
+      {
+        "artist": "Auguste Rodin",
+        "works": "399",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QIeCzAcz_H0hpbQnYFa_2uRsen1WA_Pm_9x0oSOoY-pLN3V2MkHeJXmpUdEwRQ-idaqltVCwc",
+        "link": "https://artsandculture.google.com/entity/auguste-rodin/m0wgm?categoryId=artist"
+      },
+      {
+        "artist": "Frida Kahlo",
+        "works": "63",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_TLPakGrYKzTWgwao8J2OPIdsOr9q6MqkeXiFw3D5S7i-YgY8KoHVIkPdLu4jzG67ZUSS9i",
+        "link": "https://artsandculture.google.com/entity/frida-kahlo/m015k04?categoryId=artist"
+      },
+      {
+        "artist": "Titian",
+        "works": "183",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SW-UEYisrd7fT5r6WyUdxhM8Bqvqo5zuA5G0R8mgyLoQwY_71zoPQIhk0izM85pjreU0K864k",
+        "link": "https://artsandculture.google.com/entity/titian/m0144mv?categoryId=artist"
+      },
+      {
+        "artist": "Edgar Degas",
+        "works": "531",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QVG_PDtjN-bHCakZzPcRjyYeThirgX08h2_n5E62mYKliOGPFlZekYS2V5ec3RNiZOClPbrAI",
+        "link": "https://artsandculture.google.com/entity/edgar-degas/m0g_lz?categoryId=artist"
+      },
+      {
+        "artist": "Édouard Manet",
+        "works": "371",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Ten2PgLaEXTyzI-z6iiu5kFC0gM1DB1zz6tBCO8S9r0sgy3S-cPzJKtFesJNx_2MHqRDyb",
+        "link": "https://artsandculture.google.com/entity/Édouard-manet/m02mbk?categoryId=artist"
+      },
+      {
+        "artist": "Edvard Munch",
+        "works": "94",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RqAKnbsZV6gtbvf2MwM7b4Gjqnc4QXZy1r2Fun8c1ZKhHGtuVUF7WFlbn1mJYnvd4N7LYcLw",
+        "link": "https://artsandculture.google.com/entity/edvard-munch/m02nsp?categoryId=artist"
+      },
+      {
+        "artist": "Diego Rivera",
+        "works": "65",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RxiqOYhFgQrAd9myus60YD1pKrYAR6HeTJPk1orwSooeFzgIckf5BT0aCD3AiFRfrsLP5W8w",
+        "link": "https://artsandculture.google.com/entity/diego-rivera/m0q2c2?categoryId=artist"
+      },
+      {
+        "artist": "Eugène Delacroix",
+        "works": "504",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SbYMIPkJFNO_sxyfMee3MCJMyYSt_OmtEDAkaATbRpaGdvhzHkan43VBwU_V2aEToFnp0Ze0w",
+        "link": "https://artsandculture.google.com/entity/eugène-delacroix/m016s03?categoryId=artist"
+      },
+      {
+        "artist": "Henri de Toulouse-Lautrec",
+        "works": "821",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QAGkr9SNz6Lvp21NEFhmF1AXVCIfyJRbmJbeiOG71ChIv4HIW2qVih0Sd6FwpIkbCc8Ers",
+        "link": "https://artsandculture.google.com/entity/henri-de-toulouse-lautrec/m0h7vt?categoryId=artist"
+      },
+      {
+        "artist": "William Blake",
+        "works": "501",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Q5keCWngPY4WH-AqZOmGtW3zeXilBSRfGSlvV6vorf5Uvudkv8GqZU9uIt8mwNv85qBrgngHo",
+        "link": "https://artsandculture.google.com/entity/william-blake/m03f70xs?categoryId=artist"
+      },
+      {
+        "artist": "Paul Klee",
+        "works": "77",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RFjaQH0YRPWUstf8h6hvUMIf5PLn8G4409qwGEC3NtPGs9ZmnqQh5Xu7HTqrYuqVRvlrM-KQ",
+        "link": "https://artsandculture.google.com/entity/paul-klee/m0ktf5?categoryId=artist"
+      },
+      {
+        "artist": "El Greco",
+        "works": "95",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SwHOCIbXzxsfqK3SD_gylnCMnzDZ52ONxZhW9leKCXoLBnJWcOpmYffVHI0OADRw2qwBfh1QM",
+        "link": "https://artsandculture.google.com/entity/el-greco/m011k6_?categoryId=artist"
+      },
+      {
+        "artist": "Sandro Botticelli",
+        "works": "69",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SKtYplYmfIcTzAyY7a2u_1bbsx4oRqoUQUOrdSrRU3UgP4XLeEjfRwUKfsS4ClfFwF7J7Img",
+        "link": "https://artsandculture.google.com/entity/sandro-botticelli/m0jr3g?categoryId=artist"
+      },
+      {
+        "artist": "J. M. W. Turner",
+        "works": "629",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SGRZRs1TWnSu0boLjb9PjgNeWB3jnJT9DNCcGhLc7VY6eOb3T_tdKMh0BOaHQ1FBvbflqyrA",
+        "link": "https://artsandculture.google.com/entity/j-m-w-turner/m0jh2y?categoryId=artist"
+      },
+      {
+        "artist": "Osamu Tezuka",
+        "works": "104",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QN_3J2DAmczz4YYwgIS-uGLyd3QnbOSyzzcytTz-T1yitb2-fk5XcFYZqjdLKD8IsPCHBGcEg",
+        "link": "https://artsandculture.google.com/entity/osamu-tezuka/m01vl17?categoryId=artist"
+      },
+      {
+        "artist": "Gustave Courbet",
+        "works": "131",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Qzda9LDM4OmuXAC7qZ1-kq2r7t7utx6_vxRtmVi77nF2ufqsIrPi-BHzAeG2_fWd2gC94m",
+        "link": "https://artsandculture.google.com/entity/gustave-courbet/m01dqt1?categoryId=artist"
+      },
+      {
+        "artist": "Hokusai",
+        "works": "961",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SwQn6dYnGlK_iJ9UzezlZL7HwXLa1RVtEWAf-gHM-MTX5us3vCA3ybRjdpNmWEU81QjR2ebA",
+        "link": "https://artsandculture.google.com/entity/hokusai/m0bwf4?categoryId=artist"
+      },
+      {
+        "artist": "Camille Pissarro",
+        "works": "92",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_S2vEgzOMnFyeh05-JqM7GTz8D5FOhPqhaLgtoPsyLRuzFGo6P7HZrWUESJd78n4xdh1Ao5Ug",
+        "link": "https://artsandculture.google.com/entity/camille-pissarro/m0233w?categoryId=artist"
+      },
+      {
+        "artist": "Giorgio Vasari",
+        "works": "152",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RkHKl4ilC84Bjj7bHhhBR_juT585b4RDfK0FZ1jDmCX9Pvz_3FfGrqyYod-xhLLThJGb02mw",
+        "link": "https://artsandculture.google.com/entity/giorgio-vasari/m0pvnq?categoryId=artist"
+      },
+      {
+        "artist": "Michelangelo",
+        "works": "138",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SirmuCErPICOg2f6ZAE2SVEzu1wLBQTgJs5zqaVmC20sa5lo4ryaxJ0TgC5MqUjgtv2Ff3tA",
+        "link": "https://artsandculture.google.com/entity/michelangelo/m058w5?categoryId=artist"
+      },
+      {
+        "artist": "Leonardo da Vinci",
+        "works": "753",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_TNw7zTY3NXMaXKgftgukFETAeqQm7b7s2K4O-roWhVEISK6EYvwQ5rmLaL68ql8zFI68H6tg",
+        "link": "https://artsandculture.google.com/entity/leonardo-da-vinci/m04lg6?categoryId=artist"
+      },
+      {
+        "artist": "Egon Schiele",
+        "works": "123",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Tgab9qfhvPoNLyfuBN9zdVx_o02nzVEMGE-s5MFkwFWDNz4cJOe4Vt9BC0haBa_2HSpU6BkyM",
+        "link": "https://artsandculture.google.com/entity/egon-schiele/m0df65?categoryId=artist"
+      },
+      {
+        "artist": "JR",
+        "works": "65",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Qp9kkvHjd4BG7eCKXLX_TB36I2RMoKNCmH-FwvJWJ-K6YYDJKkvWi1FCYJ5C8np3Ux0-ID",
+        "link": "https://artsandculture.google.com/entity/jr/m0dgq66j?categoryId=artist"
+      },
+      {
+        "artist": "Georgia O'Keeffe",
+        "works": "118",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_R73UwHzfUcbQKFvngrAK75zMGZdvRvOhtSZL2SiYZlQJ5vXd9LVnkcrK94AdCdVV0YXk_V",
+        "link": "https://artsandculture.google.com/entity/georgia-o-keeffe/m01t807?categoryId=artist"
+      },
+      {
+        "artist": "Hiroshige",
+        "works": "2,020",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RiYveCdI_hbfLhJJvXjQ0ZfDXDDrf4gZlU1vDhqUPLIYq9FqY87bJXt8LMfJ7kZdU7CC_y7w",
+        "link": "https://artsandculture.google.com/entity/hiroshige/m07hpgg?categoryId=artist"
+      },
+      {
+        "artist": "Tintoretto",
+        "works": "87",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QLwX1wvrEerrE2VgjvDw04S1gPT9SYVrfSewRWv9IMHbDxiVdTqDE-VImk2UknxTa4c_3H",
+        "link": "https://artsandculture.google.com/entity/tintoretto/m01xtzs?categoryId=artist"
+      },
+      {
+        "artist": "Anthony van Dyck",
+        "works": "374",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RUhjiO5309Qjau-GeyVI8ckSQ3nFaUpOjYNclV1AoGSI0dUPMbQVopLsfm_YIapJpbdfNBOw",
+        "link": "https://artsandculture.google.com/entity/anthony-van-dyck/m01r0ss?categoryId=artist"
+      },
+      {
+        "artist": "John Singer Sargent",
+        "works": "139",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QeCJp5QQ1M4XEWo-M5H1yTlJXGpVBZNjHNRbD5FznqJycx1S8d9rW4c9R25g-CuKAo3l9s",
+        "link": "https://artsandculture.google.com/entity/john-singer-sargent/m0qdx4?categoryId=artist"
+      },
+      {
+        "artist": "Amedeo Modigliani",
+        "works": "60",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_T1_MlcSc3zR3P46JFiA_Iwo2g_15B9TWGJbQ3_N3pAqtqIWBwNBQuftj2JrpcJxktKU0fZGBc",
+        "link": "https://artsandculture.google.com/entity/amedeo-modigliani/m0gsc1?categoryId=artist"
+      },
+      {
+        "artist": "Fernando Botero",
+        "works": "112",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SZOip1sxyGVduEuoXX3Ypnhcr10-_4xHTKMbw6KO4KqwPo3DPOB9bxfB5bsujUa_xUW4D31w",
+        "link": "https://artsandculture.google.com/entity/fernando-botero/m01ry44?categoryId=artist"
+      },
+      {
+        "artist": "Nicolas Poussin",
+        "works": "102",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_RkO-4-WKC5vXtEBbmMuJHsbsEYnPbjiLw3-yGDO1r3mfl8UjzDk2yu87Ymna9S9xOidIVwzQ",
+        "link": "https://artsandculture.google.com/entity/nicolas-poussin/m0gt5t?categoryId=artist"
+      },
+      {
+        "artist": "Paolo Veronese",
+        "works": "102",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SuqCccV1TXwYqtmqLhEVA9HXJ4Cf2ICpFn4iKno0YUyN1enr-6dS1zrti0GMQMDzRWw-PSRw",
+        "link": "https://artsandculture.google.com/entity/paolo-veronese/m01jdbx?categoryId=artist"
+      },
+      {
+        "artist": "Norman Rockwell",
+        "works": "60",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QG4BZcWMmzbvGkg0xIFe-nUsVeR0FDmNSY73wHx8jeLULdfcSThOpMQJ-4VTqbzyDvVzMllQ",
+        "link": "https://artsandculture.google.com/entity/norman-rockwell/m09xfc?categoryId=artist"
+      },
+      {
+        "artist": "Joaquín Sorolla",
+        "works": "46",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_R7yNxWxir0lRosG4Wf6fYw9X9OUZaFmw9ZOIdsZ2WdTFcXE6aB2OKk8FcV1xqt5KCnUOLy__w",
+        "link": "https://artsandculture.google.com/entity/joaquín-sorolla/m062stq?categoryId=artist"
+      },
+      {
+        "artist": "Jean-Baptiste-Camille Corot",
+        "works": "304",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SjRttVDvki5yci08TlpF3cGBgbddP7TNNZIqO58DrJHPKRxesm-3fFALpk91-QL6UjxscJ",
+        "link": "https://artsandculture.google.com/entity/jean-baptiste-camille-corot/m01dn3v?categoryId=artist"
+      },
+      {
+        "artist": "Lucas Cranach the Elder",
+        "works": "571",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_QqUWsA6peugqEk7m2NzOn4g1VWDclOZOb0QVwz6Sr4fmlFCqDQnv2D7boAJ9bSSErMx4El8as",
+        "link": "https://artsandculture.google.com/entity/lucas-cranach-the-elder/m0kqp0?categoryId=artist"
+      },
+      {
+        "artist": "Utagawa Kuniyoshi",
+        "works": "400",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_SHTlWTEtDz9KSrwdHgb4DWbmdyUxma695pGrodbl9-B0kRPzTGF7ORTBWmTqhkJqRBY7LtLA",
+        "link": "https://artsandculture.google.com/entity/utagawa-kuniyoshi/m01rtjk?categoryId=artist"
+      },
+      {
+        "artist": "Mary Cassatt",
+        "works": "182",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_TrLN-fmZF7yUeccndaudwSfjkMhpZM4aAoTAHK7GhDOChdvmRp_zR3IrtFOUlvXV8Vl5Jx9g",
+        "link": "https://artsandculture.google.com/entity/mary-cassatt/m0533_?categoryId=artist"
+      },
+      {
+        "artist": "François Boucher",
+        "works": "508",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Qc8XTCkiTxz6UCJaJiMgTvYupCdaluG6MEhwGALTeP7wn4qK_ssSSr4P2ELwU1howChkIM",
+        "link": "https://artsandculture.google.com/entity/françois-boucher/m0c424?categoryId=artist"
+      },
+      {
+        "artist": "Hans Holbein the Younger",
+        "works": "292",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Q6_ahhokhEvO2vU0HtkRM97vM-acEgp2rYKzBbK54bZsbtiM3b5RhieFGvRD6RTbpXfZdOrg",
+        "link": "https://artsandculture.google.com/entity/hans-holbein-the-younger/m0cy9m?categoryId=artist"
+      },
+      {
+        "artist": "Caspar David Friedrich",
+        "works": "56",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_T8PyORddoxr9hSAk-umLbXETHBI5Fcdn7wQUviYmEKISVN509R9IflBfwekW8Dgsd2NDASOg",
+        "link": "https://artsandculture.google.com/entity/caspar-david-friedrich/m01q3f?categoryId=artist"
+      },
+      {
+        "artist": "Zhao Mengfu",
+        "works": "11",
+        "thumbnail": "https://lh3.googleusercontent.com/ci/AL18g_Rk0EGiYRfZBZpk3ZWUY0KMgmnNSfZcD4ZE2mpBlgHMhRbZk05MqSYUKExkOPQtgQ1Gvg0Hcg",
+        "link": "https://artsandculture.google.com/entity/zhao-mengfu/m0306z2?categoryId=artist"
+      }
+    ]
+  ]
+}

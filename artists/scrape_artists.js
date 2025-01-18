@@ -1,5 +1,10 @@
 import { launch } from 'puppeteer';
 import { writeFile } from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 async function getResultsFromCategory(categoryContent) {
     const artistsPattern = /cobject","(?<artist>[^"]+)","(?<works>[^ ]+) \w+","(?<thumbnail>[^"]+)","(?<link>[^"]+)/gm;
@@ -20,9 +25,12 @@ async function getArtistsInfo() {
 
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36');
 
-    await page.goto('https://artsandculture.google.com/category/artist', {
+    const localFilePath = path.resolve(__dirname, 'Artists.html');
+    await page.goto(`file://${localFilePath}`, {
         waitUntil: 'networkidle0'
     });
+
+    console.log('Page loaded successfully');
 
     const data = await page.content();
     const results = {};

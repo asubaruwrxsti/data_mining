@@ -45,13 +45,21 @@ async function getArtworksOfArtist(page, artistUrl) {
         let clickCount = 0;
         while (clickCount < MAX_RETRIES) {
             try {
-                const nextButton = await page.$('div.bYeTje.CMCEae[data-gaaction="rightArrow"]:not([aria-hidden="true"])');
+                const nextButton = await page.$('div.bYeTje.CMCEae[data-gaaction="rightArrow"]:not([aria-hidden="true"])',
+                    { visible: true, timeout: TIMEOUT_MS }
+                );
+
                 if (!nextButton) { console.log('Reached end of pagination'); break; }
 
-                await Promise.all([
-                    nextButton.click(),
-                    page.waitForNetworkIdle({ timeout: TIMEOUT_MS })
-                ]);
+                await nextButton.evaluate(button => {
+                    if (!button.isConnected) throw new Error('Button not connected to DOM');
+                    button.scrollIntoView();
+                });
+
+                await retry(async () => {
+                    await nextButton.click();
+                    await page.waitForNetworkIdle({ timeout: TIMEOUT_MS });
+                }, MAX_RETRIES);
 
                 clickCount++;
                 console.log(`Loading page ${clickCount}...`);

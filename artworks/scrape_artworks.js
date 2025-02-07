@@ -43,13 +43,24 @@ async function getArtworksOfArtist(page, artistUrl) {
         console.log('Page loaded successfully');
 
         let clickCount = 0;
-        while (clickCount < MAX_RETRIES) {
+        while (true) {
             try {
-                const nextButton = await page.$('div.bYeTje.CMCEae[data-gaaction="rightArrow"]:not([aria-hidden="true"])',
-                    { visible: true, timeout: TIMEOUT_MS }
-                );
+                // :not([aria-hidden="true"])
+                // #exp_tab_popular > div > div > div.bYeTje.CMCEae.BcYSHe
+                // querySelector("#exp_tab_popular > div > div > div.bYeTje.CMCEae.BcYSHe > div")
+                const nextButton = await page.waitForSelector('#exp_tab_popular > div > div > div.bYeTje.CMCEae.BcYSHe > div', {
+                    visible: true,
+                    timeout: TIMEOUT_MS
+                });
 
-                if (!nextButton) { console.log('Reached end of pagination'); break; }
+                const isHidden = await nextButton.evaluate(element => {
+                    return element.getAttribute('aria-hidden') === 'true';
+                });
+
+                if (isHidden) {
+                    console.log('Reached end of pagination');
+                    break;
+                }
 
                 await nextButton.evaluate(button => {
                     if (!button.isConnected) throw new Error('Button not connected to DOM');
@@ -57,12 +68,14 @@ async function getArtworksOfArtist(page, artistUrl) {
                 });
 
                 await retry(async () => {
+                    // await page.evaluate((button) => {
+                    //     button.style.background = 'yellow';
+                    // }, nextButton);
                     await nextButton.click();
                     await page.waitForNetworkIdle({ timeout: TIMEOUT_MS });
                 }, MAX_RETRIES);
 
                 clickCount++;
-                console.log(`Loading page ${clickCount}...`);
 
                 await delay(DELAY_MS);
                 await page.waitForSelector('div.IilBJf.BHleke', {
@@ -110,7 +123,7 @@ async function getArtworksOfArtist(page, artistUrl) {
 
 (async () => {
     const browser = await launch({
-        headless: true,
+        headless: false,
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
 
@@ -152,6 +165,6 @@ async function getArtworksOfArtist(page, artistUrl) {
     } catch (error) {
         console.error('Fatal error:', error);
     } finally {
-        await browser.close();
+        // await browser.close();
     }
 })();

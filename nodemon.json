@@ -1,0 +1,13 @@
+{
+    "watch": [
+        "*.js",
+        "routes/",
+        "views/",
+        "public/"
+    ],
+    "ext": "js,json,ejs,html,css",
+    "ignore": [
+        "node_modules/"
+    ],
+    "exec": "node main.js"
+}

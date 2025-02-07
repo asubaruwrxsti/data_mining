@@ -1,11 +1,14 @@
 import express from 'express'
 import { insertData, getDB } from './db/index.js'
 import { setupRoutes } from './routes/index.js'
+import { setupUIRoutes } from './routes/ui.js'
 
 const app = express()
 const port = 3000
 
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
 app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`)
     if (Object.keys(req.query).length > 0) {
@@ -18,6 +21,11 @@ const db = getDB()
 insertData(db)
 
 app.use('/', setupRoutes(db))
+app.use('/ui', setupUIRoutes(db))
+
+app.set('view engine', 'ejs')
+app.set('views', './views')
+app.use(express.static('public'))
 
 app.listen(port, () => {
     console.log(`[Server] Running at http://localhost:${port}`)

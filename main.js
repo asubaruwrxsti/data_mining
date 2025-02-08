@@ -2,6 +2,7 @@ import express from 'express'
 import { insertData, getDB } from './db/index.js'
 import { setupRoutes } from './routes/index.js'
 import { setupUIRoutes } from './routes/ui.js'
+import open from 'open'
 
 const app = express()
 const port = 3000
@@ -29,6 +30,10 @@ app.use(express.static('public'))
 
 app.listen(port, () => {
     console.log(`[Server] Running at http://localhost:${port}`)
+
+    open(`http://localhost:${port}/ui`).catch(err => {
+        console.error(err);
+    });
 })
 
 process.on('SIGINT', () => {

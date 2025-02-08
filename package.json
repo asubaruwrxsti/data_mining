@@ -21,6 +21,9 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "graphology": "^0.26.0",
+    "open": "^10.1.0",
+    "sigma": "^3.0.1",
     "sqlite3": "^5.1.7",
     "xlsx": "^0.18.5"
   },

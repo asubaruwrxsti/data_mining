@@ -10,7 +10,8 @@ export const CATALOG_SCHEMAS = {
         'FORM': 'TEXT',
         'TYPE': 'TEXT',
         'SCHOOL': 'TEXT',
-        'TIMEFRAME': 'TEXT'
+        'TIMEFRAME': 'TEXT',
+        'PRICE': 'TEXT'
     },
     bio_catalog: {
         'ARTIST': 'TEXT',

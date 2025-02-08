@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-text {
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content {
+    display: none;
+    position: relative;
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: large;
+}
+
+.fade-text {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+}
+
+#graph-container {
+    height: 80vh;
+    width: 90vw;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}

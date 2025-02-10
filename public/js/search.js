@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#search-bar").on("input", function (event) {
-        if (event.target.value.length < 3 || event.target.value === '') {
+        if (event.target.value === '') {
             $("#search-results").hide();
             return;
         }

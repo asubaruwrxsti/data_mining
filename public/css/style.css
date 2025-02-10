@@ -23,6 +23,7 @@ body {
 }
 
 #main-content {
+    margin-top: 40vh;
     display: none;
     position: relative;
     font-family: 'Montserrat Bold', sans-serif;
@@ -37,10 +38,11 @@ body {
 
 #graph-container {
     height: 80vh;
-    width: 90vw;
     border-style: solid;
     border-color: black;
     border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 .search-container {
@@ -48,6 +50,7 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #search-bar {
@@ -112,4 +115,43 @@ body {
     justify-content: left;
     align-items: start;
     gap: 10px;
+}
+
+.info-container {
+    padding: 20px;
+    max-width: 90vw;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.info-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.info-container a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-container a:hover {
+    color: #388E3C;
+}
+
+.footer-container {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    color: #666;
+    font-size: 0.9em;
+    font-family: 'Montserrat Bold', sans-serif;
 }

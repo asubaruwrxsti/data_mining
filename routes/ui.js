@@ -1,10 +1,10 @@
 const express = require('express')
 
-function setupUIRoutes(db) {
+function setupUIRoutes(db, port = 3000) {
     const router = express.Router()
 
     router.get(`/`, (req, res) => {
-        res.render('index')
+        res.render('index', { port })
     })
 
     return router

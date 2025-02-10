@@ -33,6 +33,19 @@
     </div>
 
     <div id="main-content">
+        <div class="info-container">
+            <h1>Quantifying Success and Reputation in Art</h1>
+            <p>
+                This project aims to quantify the success and reputation of artists in the art world.
+                The data visualisation shows the path of where artists exhibited in order to become famous.
+                The size of the nodes represents the number of artists that have exhibited at that location.
+
+                Data shown is limited to 500 artists, while the full dataset contains information about 5.588 artits and
+                52.498 exhibitions.
+
+                The data is collected from the <a href="https://www.wga.hu/index_database.html">Web Gallery of Art</a>
+                Click<a href="http://localhost:<%= port %>" target="_blank"> here </a> to see the API documentation.
+        </div>
         <div class="search-container">
             <div class="search-bar-container">
                 <input type="text" id="search-bar" placeholder="Search for an artist...">
@@ -42,7 +55,13 @@
             <script src="js/search.js"></script>
         </div>
         <div id="graph-container"></div>
+        <footer class="footer-container">
+            <p>Created with <span style="color: red;">&hearts;</span> by <a
+                    href="https://github.com/asubaruwrxsti">Arlind
+                    Ismalaja</a></p>
+        </footer>
     </div>
 </body>
+
 
 </html>

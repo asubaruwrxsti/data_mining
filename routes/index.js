@@ -7,12 +7,12 @@ function setupRoutes(db) {
         res.json({
             message: 'Art Catalog API',
             endpoints: {
-                '/general': 'Get general catalog entries',
-                '/general/unique-locations': 'Get unique painting locations from general catalog',
-                '/bio': 'Get artist biographies',
-                '/bio/artist-locations': 'Get unique artist locations from bio catalog',
-                '/bio/artist-artworks': 'Get artist artworks',
-                '/bio/artist-timeline': 'Get artist timeline',
+                '/general': 'Get general catalog entries; Params: limit(optional, integer, default=10)',
+                '/general/unique-locations': 'Get unique painting locations from general catalog; Params: limit(optional, integer, default=10)',
+                '/bio': 'Get artist biographies; Params: limit(optional, integer, default=10)',
+                '/bio/artist-locations': 'Get unique artist locations from bio catalog; Params: limit(optional, integer, default=30)',
+                '/bio/artist-artworks': 'Get artist artworks; Params: artist(required, string), limit(optional, integer, default=30)',
+                '/bio/artist-timeline': 'Get artist timeline; Params: artist(required, string), limit(optional, integer, default=30)',
             }
         })
     });

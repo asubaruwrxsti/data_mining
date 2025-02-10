@@ -43,11 +43,11 @@ body {
     border-radius: 10px;
 }
 
-#search-container {
+.search-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 #search-bar {
@@ -55,7 +55,6 @@ body {
     max-width: 300px;
     height: 40px;
     border-radius: 5px;
-    margin-bottom: 25px;
     padding: 0 10px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -64,4 +63,53 @@ body {
 
 #search-results {
     display: none;
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.artist-result {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: left;
+}
+
+.artist-result:hover {
+    background-color: #f0f0f0;
+}
+
+#clear-search {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 40px;
+}
+
+#clear-search:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    gap: 10px;
 }

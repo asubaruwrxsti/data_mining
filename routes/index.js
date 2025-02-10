@@ -83,15 +83,20 @@ function setupRoutes(db) {
 
     router.get('/bio/search', (req, res) => {
         const artistName = req.query.artistName;
+        const limit = parseInt(req.query.limit) || 5;
 
         if (!artistName) {
-            res.status(400).json({ error: 'Artist name is required' });
+            return {}
+        }
+
+        if (limit <= 0) {
+            res.status(400).json({ error: 'Limit must be a positive number' });
             return;
         }
 
         console.log(`[API] Searching for artist: ${artistName}`)
 
-        db.all('SELECT * FROM bio_catalog WHERE ARTIST LIKE ?', [`%${artistName}%`], (err, rows) => {
+        db.all('SELECT * FROM bio_catalog WHERE ARTIST LIKE ? LIMIT ?', [`%${artistName}%`, limit], (err, rows) => {
             if (err) {
                 res.status(500).json({ error: err.message });
                 return;

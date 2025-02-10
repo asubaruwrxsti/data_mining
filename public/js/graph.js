@@ -61,3 +61,65 @@ fetch(`/bio?limit=${LIMIT}`, {
         });
     })
     .catch(error => console.error(error));
+
+function filterArtist(artistName) {
+    if (!artistName) {
+        return;
+    }
+    fetch(`/bio/artist-timeline?artist=${artistName}&limit=${LIMIT}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    }).then(response => response.json())
+        .then(result => {
+            const arrayData = result.data || result;
+            const relatedNodes = new Set();
+            const relatedEdges = new Set();
+
+            arrayData.forEach((item, index) => {
+                if (index === 0) {
+                    return;
+                }
+
+                const previousLocation = arrayData[index - 1].LOCATION;
+                const currentLocation = item.LOCATION;
+
+                relatedNodes.add(previousLocation);
+                relatedNodes.add(currentLocation);
+                relatedEdges.add(`${previousLocation}-${currentLocation}`);
+                relatedEdges.add(`${currentLocation}-${previousLocation}`);
+            });
+
+            graph.forEachNode(node => {
+                if (!artistName || relatedNodes.has(node)) {
+                    graph.setNodeAttribute(node, 'color', '#000000');
+                } else {
+                    graph.setNodeAttribute(node, 'color', '#D3D3D3');
+                }
+            });
+
+            graph.forEachEdge(edge => {
+                const source = graph.source(edge);
+                const target = graph.target(edge);
+                const edgeKey = `${source}-${target}`;
+
+                if (!artistName || relatedEdges.has(edgeKey)) {
+                    graph.setEdgeAttribute(edge, 'color', '#000000');
+                } else {
+                    graph.setEdgeAttribute(edge, 'color', '#D3D3D3');
+                }
+            });
+        })
+        .catch(error => console.error(error));
+}
+
+function resetFilter() {
+    graph.forEachNode(node => {
+        graph.setNodeAttribute(node, 'color', '#000000');
+    });
+
+    graph.forEachEdge(edge => {
+        graph.setEdgeAttribute(edge, 'color', 'purple');
+    });
+}

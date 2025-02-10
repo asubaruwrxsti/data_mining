@@ -81,6 +81,28 @@ function setupRoutes(db) {
         });
     });
 
+    router.get('/bio/search', (req, res) => {
+        const artistName = req.query.artistName;
+
+        if (!artistName) {
+            res.status(400).json({ error: 'Artist name is required' });
+            return;
+        }
+
+        console.log(`[API] Searching for artist: ${artistName}`)
+
+        db.all('SELECT * FROM bio_catalog WHERE ARTIST LIKE ?', [`%${artistName}%`], (err, rows) => {
+            if (err) {
+                res.status(500).json({ error: err.message });
+                return;
+            }
+            res.json({
+                artist: artistName,
+                data: rows
+            });
+        });
+    });
+
     router.get('/bio/artist-locations', (req, res) => {
         const limit = parseInt(req.query.limit) || 30;
         console.log(`[API] Fetching unique artist locations from bio_catalog with limit: ${limit}`)

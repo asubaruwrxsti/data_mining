@@ -1,12 +1,14 @@
 {
   "name": "data_mining",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
+  "bin": "main.js",
   "scripts": {
     "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon main.js",
-    "build": "pkg . --public --public-packages=* --compress GZip"
+    "build:linux": "pkg . --public --public-packages=* --compress GZip --targets node16-linux-x64",
+    "build:windows": "pkg . --public --public-packages=* --compress GZip --targets node16-win-x64"
   },
   "repository": {
     "type": "git",
@@ -28,27 +30,10 @@
     "sqlite3": "^5.1.7",
     "xlsx": "^0.18.5"
   },
-  "js/ts.implicitProjectConfig.module": "ES2015",
-  "javascript.preferences.importModuleSpecifier": "relative",
-  "devDependencies": {
-    "nodemon": "^3.1.9"
-  },
-  "type": "commonjs",
-  "bin": "main.js",
   "pkg": {
     "assets": [
-      "views/**/*",
       "public/**/*",
-      "catalogs/**/*"
-    ],
-    "scripts": [
-      "node_modules/sqlite3/lib/binding/**/*.node"
-    ],
-    "targets": [
-      "node18-linux-x64"
-    ],
-    "options": [
-      "experimental-modules"
+      "views/**/*"
     ]
   }
 }

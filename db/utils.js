@@ -1,8 +1,9 @@
-import { join } from 'path'
-import XLSX from 'xlsx'
-import { CATALOG_SCHEMAS } from '../constants/schemas.js'
+const { join } = require('path')
+const XLSX = require('xlsx')
+const { CATALOG_SCHEMAS } = require('../constants/schemas')
 
-export function excelToDb(db, filename, tableName) {
+
+function excelToDb(db, filename, tableName) {
     return new Promise((resolve, reject) => {
         try {
             console.log(`[Import] Starting import of ${filename} into ${tableName}`)
@@ -50,4 +51,8 @@ export function excelToDb(db, filename, tableName) {
             reject(error)
         }
     })
+}
+
+module.exports = {
+    excelToDb
 }

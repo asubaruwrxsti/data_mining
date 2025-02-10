@@ -1,8 +1,8 @@
-import sqlite3 from 'sqlite3'
-import { excelToDb } from './utils.js'
+const sqlite3 = require('sqlite3')
+const { excelToDb } = require('./utils.js')
 
 let instance = null
-export class Database {
+class Database {
     constructor() {
         if (instance) {
             throw new Error('Database instance already exists')
@@ -25,10 +25,11 @@ export class Database {
     }
 }
 
-export const getDB = () => {
+const getDB = () => {
     return Database.getInstance()
 }
-export async function insertData(db) {
+
+async function insertData(db) {
     try {
         excelToDb(db, 'catalog.xlsx', 'general_catalog')
         excelToDb(db, 'bio_catalog.xlsx', 'bio_catalog')
@@ -36,4 +37,10 @@ export async function insertData(db) {
     } catch (error) {
         console.error('[Database] Import error:', error)
     }
+}
+
+module.exports = {
+    Database,
+    getDB,
+    insertData
 }

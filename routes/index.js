@@ -1,6 +1,6 @@
-import express from 'express'
+const express = require('express')
 
-export function setupRoutes(db) {
+function setupRoutes(db) {
     const router = express.Router()
 
     router.get('/', (req, res) => {
@@ -188,4 +188,8 @@ export function setupRoutes(db) {
     });
 
     return router
+}
+
+module.exports = {
+    setupRoutes
 }

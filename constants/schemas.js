@@ -1,4 +1,4 @@
-export const CATALOG_SCHEMAS = {
+const CATALOG_SCHEMAS = {
     general_catalog: {
         'AUTHOR': 'TEXT',
         'BORN-DIED': 'TEXT',
@@ -20,4 +20,8 @@ export const CATALOG_SCHEMAS = {
         'SCHOOL': 'TEXT',
         'URL': 'TEXT'
     }
+}
+
+module.exports = {
+    CATALOG_SCHEMAS
 }

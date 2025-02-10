@@ -1,6 +1,6 @@
-import express from 'express'
+const express = require('express')
 
-export function setupUIRoutes(db) {
+function setupUIRoutes(db) {
     const router = express.Router()
 
     router.get(`/`, (req, res) => {
@@ -8,4 +8,8 @@ export function setupUIRoutes(db) {
     })
 
     return router
+}
+
+module.exports = {
+    setupUIRoutes
 }

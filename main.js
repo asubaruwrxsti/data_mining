@@ -1,8 +1,7 @@
-import express from 'express'
-import { insertData, getDB } from './db/index.js'
-import { setupRoutes } from './routes/index.js'
-import { setupUIRoutes } from './routes/ui.js'
-import open from 'open'
+const express = require('express')
+const { getDB, insertData } = require('./db')
+const { setupRoutes } = require('./routes')
+const { setupUIRoutes } = require('./routes/ui')
 
 const app = express()
 const port = 3000
@@ -10,7 +9,7 @@ const port = 3000
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use((req, res, next) => {
+app.use((req, _res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`)
     if (Object.keys(req.query).length > 0) {
         console.log('Query params:', req.query)
@@ -28,19 +27,17 @@ app.set('view engine', 'ejs')
 app.set('views', './views')
 app.use(express.static('public'))
 
-app.listen(port, () => {
+app.listen(port, async () => {
     console.log(`[Server] Running at http://localhost:${port}`)
-
-    open(`http://localhost:${port}/ui`).catch(err => {
-        console.error(err);
-    });
+    console.log(`[Server] Access the UI at http://localhost:${port}/ui`)
+    console.log('[Server] Press CTRL+C to stop')
 })
 
 process.on('SIGINT', () => {
     console.log('\n[Server] Shutdown initiated')
 
     db.serialize(() => {
-        db.run('SELECT 1', [], (err) => {
+        db.run('SELECT 1', [], (_err) => {
             db.close((err) => {
                 if (err) {
                     console.error('[Database] Error closing connection:', err)

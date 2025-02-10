@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main.js"
+    "dev": "nodemon main.js",
+    "build": "pkg . --public --public-packages=* --compress GZip"
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,22 @@
   "devDependencies": {
     "nodemon": "^3.1.9"
   },
-  "type": "module"
+  "type": "commonjs",
+  "bin": "main.js",
+  "pkg": {
+    "assets": [
+      "views/**/*",
+      "public/**/*",
+      "catalogs/**/*"
+    ],
+    "scripts": [
+      "node_modules/sqlite3/lib/binding/**/*.node"
+    ],
+    "targets": [
+      "node18-linux-x64"
+    ],
+    "options": [
+      "experimental-modules"
+    ]
+  }
 }
